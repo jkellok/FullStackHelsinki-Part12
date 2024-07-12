@@ -1,0 +1,41 @@
+Script started on 2024-07-09 19:21:22+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+]0;root@DESKTOP-85Q16RF: ~root@DESKTOP-85Q16RF:~# docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K9c704ecd0c69: Pulling fs layer [1B[1A[2K9c704ecd0c69: Downloading [>                                                  ]  298.2kB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [====>                                              ]  2.473MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [=======>                                           ]  4.337MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [==========>                                        ]   6.47MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [==============>                                    ]   8.33MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [================>                                  ]  9.874MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [====================>                              ]  12.04MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [======================>                            ]  13.28MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [========================>                          ]  14.83MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [============================>                      ]  16.69MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [===============================>                   ]  18.84MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [===================================>               ]  21.02MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [=====================================>             ]  22.54MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [=========================================>         ]  24.71MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [============================================>      ]  26.57MB/29.71MB[1B[1A[2K9c704ecd0c69: Downloading [================================================>  ]  28.73MB/29.71MB[1B[1A[2K9c704ecd0c69: Verifying Checksum [1B[1A[2K9c704ecd0c69: Download complete [1B[1A[2K9c704ecd0c69: Extracting [>                                                  ]  327.7kB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [====>                                              ]  2.621MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [======>                                            ]  3.604MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [=========>                                         ]  5.898MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [============>                                      ]  7.537MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==============>                                    ]   8.52MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [===============>                                   ]  9.503MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==================>                                ]  11.14MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [========================>                          ]  14.42MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==============================>                    ]  18.02MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [===================================>               ]  20.97MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [========================================>          ]  24.25MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==========================================>        ]  25.23MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [===========================================>       ]  25.56MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [=============================================>     ]   27.2MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==============================================>    ]  27.85MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [===============================================>   ]  28.51MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [=================================================> ]  29.16MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [=================================================> ]  29.49MB/29.71MB[1B[1A[2K9c704ecd0c69: Extracting [==================================================>]  29.71MB/29.71MB[1B[1A[2K9c704ecd0c69: Pull complete [1BDigest: sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@7bca80f1c3ec: /root@7bca80f1c3ec:/# ls -la
+[?2004ltotal 56
+drwxr-xr-x   1 root root 4096 Jul  9 16:21 [0m[01;34m.[0m
+drwxr-xr-x   1 root root 4096 Jul  9 16:21 [01;34m..[0m
+-rwxr-xr-x   1 root root    0 Jul  9 16:21 [01;32m.dockerenv[0m
+lrwxrwxrwx   1 root root    7 Apr 22 13:08 [01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4096 Apr 22 13:08 [01;34mboot[0m
+drwxr-xr-x   5 root root  360 Jul  9 16:21 [01;34mdev[0m
+drwxr-xr-x   1 root root 4096 Jul  9 16:21 [01;34metc[0m
+drwxr-xr-x   3 root root 4096 Jun  5 02:06 [01;34mhome[0m
+lrwxrwxrwx   1 root root    7 Apr 22 13:08 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root    9 Apr 22 13:08 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x   2 root root 4096 Jun  5 02:02 [01;34mmedia[0m
+drwxr-xr-x   2 root root 4096 Jun  5 02:02 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4096 Jun  5 02:02 [01;34mopt[0m
+dr-xr-xr-x 220 root root    0 Jul  9 16:21 [01;34mproc[0m
+drwx------   2 root root 4096 Jun  5 02:05 [01;34mroot[0m
+drwxr-xr-x   4 root root 4096 Jun  5 02:06 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 Apr 22 13:08 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   2 root root 4096 Jun  5 02:02 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Jul  9 16:21 [01;34msys[0m
+drwxrwxrwt   2 root root 4096 Jun  5 02:05 [30;42mtmp[0m
+drwxr-xr-x  12 root root 4096 Jun  5 02:02 [01;34musr[0m
+drwxr-xr-x  11 root root 4096 Jun  5 02:05 [01;34mvar[0m
+[?2004h]0;root@7bca80f1c3ec: /root@7bca80f1c3ec:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@7bca80f1c3ec: /root@7bca80f1c3ec:/# touch /usr/ /src/app/index.js
+[?2004l[?2004h]0;root@7bca80f1c3ec: /root@7bca80f1c3ec:/# [Kls /usr/src/app/
+[?2004lindex.js
+[?2004h]0;root@7bca80f1c3ec: /root@7bca80f1c3ec:/# exit
+[?2004lexit
+]0;root@DESKTOP-85Q16RF: ~root@DESKTOP-85Q16RF:~# exit
+exit
+
+Script done on 2024-07-09 19:23:14+03:00 [COMMAND_EXIT_CODE="0"]
