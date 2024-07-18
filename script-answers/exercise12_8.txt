@@ -1,0 +1,121 @@
+Script started on 2024-07-13 14:30:08+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="120" LINES="30"]
+]0;root@DESKTOP-85Q16RF: /mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-85Q16RF:/mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backend# docker compose-[K[Ke -f docker-compose.dev.yml up -d
+[1A[1B[0G[?25l[+] Running 0/0
+ [33m⠋[0m Network todo-backend_default  Creating                                                                          [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Network todo-backend_default  Creating                                                                          [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠋[0m Container todo-backend-mongo-1  Creating                                                                        [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠙[0m Container todo-backend-mongo-1  Creating                                                                        [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠹[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠸[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠼[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.5s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠴[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠦[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.7s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠧[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.8s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠇[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [33m⠏[0m Container todo-backend-mongo-1  Starting                                                                        [34m1.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                         [34m0.2s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                         [34m1.0s [0m
+[?25h]0;root@DESKTOP-85Q16RF: /mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-85Q16RF:/mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backend# docker exev [K[Kc -it [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker ps
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                            PORTS                     NAMES
+002b332bb8c1   mongo                  "docker-entrypoint.s…"   34 seconds ago   Up 32 seconds                     0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+3ad2ff4b957d   exercise-team-10_api   "docker-entrypoint.s…"   20 months ago    Restarting (254) 52 seconds ago                             exercise-team-10-api-1
+]0;root@DESKTOP-85Q16RF: /mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-85Q16RF:/mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backend# docker exec -it todo-backend-mongo-1
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+]0;root@DESKTOP-85Q16RF: /mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-85Q16RF:/mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backend# docker exec -it todo-backend-mongo-1 bash
+[?2004hroot@002b332bb8c1:/# mongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	669265c21f384a8a0d149f47
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.10[0m
+Using MongoDB:		7.0.12
+[1m[33mUsing Mongosh[0m:		2.2.10
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-07-13T11:30:50.182+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never' in this binary version
+   2024-07-13T11:30:50.182+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow o[1G[0Jthe_database> show [20Gcollections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find([[1G[0Jthe_database> db.todos.find([29G{][1G[0Jthe_database> db.todos.find({[30G})
+[
+  {
+    _id: ObjectId([32m'66916b2a20f74ee4e0149f48'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'66916b2a20f74ee4e0149f49'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne({text[33mtext[39m:[32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone:fals[33mfalse[39m})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m:[33mfalse[39m})[99G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m:[33mfalse[39m})[98G[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m:[33mfalse[39m})[97G[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[94G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[85G[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[84G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt[44m"[39m[49m, [33mdone[39m: [33mfalse[39m})[40G[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[41G[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool belt[44m"[39m[49m, [33mdone[39m: [33mfalse[39m})[40G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt[44m"[39m[49m, [33mdone[39m: [33mfalse[39m})[41G[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[42G[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[86G[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[87G[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[100G[1C[1G[0Jthe_database> db.todos.insertOne[44m([49m{[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[101G[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[102G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'669266e31f384a8a0d149f48'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[102G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'66916b2a20f74ee4e0149f48'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'66916b2a20f74ee4e0149f49'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'669266e31f384a8a0d149f48'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@002b332bb8c1:/# exit
+[?2004lexit
+]0;root@DESKTOP-85Q16RF: /mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-85Q16RF:/mnt/c/Users/school/Desktop/school_stuff/FullStackHelsinki/repo-part12/part12-containers-applications/todo-app/todo-backend# exit
+exit
+
+Script done on 2024-07-13 14:37:34+03:00 [COMMAND_EXIT_CODE="0"]
