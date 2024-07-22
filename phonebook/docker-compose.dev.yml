@@ -1,0 +1,37 @@
+services:
+  app:
+    image: phonebook-frontend-dev
+    build:
+      context: client
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./client/:/usr/src/app
+    container_name: phonebook-app-frontend-dev
+    depends_on:
+      - server
+    ports:
+      - 5173:5173
+  server:
+    image: phonebook-backend-dev
+    build:
+      context: server
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./server/:/usr/src/app
+    container_name: phonebook-app-backend-dev
+    ports:
+      - 3001:3001
+    env_file:
+      - ./server/.env
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: phonebook-app-reverse-proxy
+    depends_on:
+      - app
+      - server
+  debug-helper:
+    image: busybox
